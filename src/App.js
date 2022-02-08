@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import RegistrationForm from "./comp/RegistrationForm";
-
+import TableData from "./comp/TableData";
 function App() {
   const initialValues = {
     name: "",
@@ -20,6 +20,7 @@ function App() {
         errors={errors}
         setErrors={setErrors}
       />
+      <TableData />
     </div>
   );
 }
